@@ -1,0 +1,22 @@
+{
+  "name": "react-mfe",
+  "version": "1.0.0",
+  "description": "React micro-frontend PoC with Webpack Module Federation, Lerna and Typescript",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "yarn clean && lerna run --parallel build",
+    "serve": "lerna run --parallel serve",
+    "clean": "lerna run --parallel clean",
+    "make-types": "lerna run --parallel make-types",
+    "generate-mfe": "node ./cli-wizard/index.js"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

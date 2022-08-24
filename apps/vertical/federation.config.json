@@ -1,0 +1,6 @@
+{
+  "name": "vertical",
+  "exposes": {
+    "./App": "./src/App"
+  }
+}
